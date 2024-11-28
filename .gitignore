@@ -1,0 +1,15 @@
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+/.quarto/
+
+/agujournal2019.cls
+/trackchanges.sty
+/docs
+
+/.luarc.json
+
+.vscode/*
+.DS_Store
+
+site_libs/*
