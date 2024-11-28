@@ -1,0 +1,30 @@
+---
+title: "What is a food web?"
+author:
+  - name: Tanya Strydom
+    id: ts
+    orcid: 0000-0001-6067-1349
+    corresponding: true
+    email: t.strydom@sheffield.ac.uk
+    role: 
+    - conceptualization: lead
+    - methodology: supporting
+    affiliation:
+      - id: sheffield
+        name: School of Biosciences, University of Sheffield, Sheffield, UK
+funding: "The author(s) received no specific funding for this work. Well they did I just haven't done the homework"
+keywords:
+  - food webs
+abstract: |
+  TODO
+date: last-modified
+bibliography: references.bib
+number-sections: true
+---
+
+Words... [@poisotSpeciesWhyEcological2015]
+
+# References {.unnumbered}
+
+::: {#refs}
+:::
