@@ -22,7 +22,7 @@ bibliography: references.bib
 number-sections: true
 ---
 
-Words... [@poisotSpeciesWhyEcological2015]
+A reference... [@poisotSpeciesWhyEcological2015]
 
 # References {.unnumbered}
 
