@@ -1,5 +1,5 @@
 ---
-title: "What is a food web?"
+title: "What is a food web and why should we care?"
 author:
   - name: Tanya Strydom
     id: ts
@@ -21,6 +21,12 @@ date: last-modified
 bibliography: references.bib
 number-sections: true
 ---
+
+## What is a food web?
+
+## What do food webs represent
+
+## What can we learn from food webs
 
 A reference... [@poisotSpeciesWhyEcological2015]
 
