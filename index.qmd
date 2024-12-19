@@ -24,9 +24,9 @@ number-sections: true
 
 ## What is a food web?
 
-## What do food webs represent
+Typically food webs represent the feeding links between a collection of species and gives us information as to 'who eats who' in the community. 
 
-## What can we learn from food webs
+## What can we learn from food webs?
 
 A reference... [@poisotSpeciesWhyEcological2015]
 
