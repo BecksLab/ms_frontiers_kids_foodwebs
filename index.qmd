@@ -24,9 +24,23 @@ number-sections: true
 
 ## What is a food web?
 
-Typically food webs represent the feeding links between a collection of species and gives us information as to 'who eats who' in the community. 
+Food webs are a way for us to show all the different feeding links between the species in a community (**FIGURE**). This gives us information about 'who eats who' as well as information about the flow of energy and nutrients between species. This is because the prey that a predator can (or chooses) to eat will determine how the nutrients and energy is moved and dispersed as it moves from prey to predator (**FIGURE**). This means that both the links within a food web as well as the structure of a food web can tell us something about both a community of species (who eats who) as well as something about ecosystem level processes (energy/nutrient flow and cycling). The fact that food webs contain information about both the community (*i.e.,* the collection of species found in a specific area) and the ecosystem makes them a very powerful and useful tool to allow us to see and understand the 'bigger picture' of our environment. 
+
+> Do I need to justify why we care about energy? And more specifically the basics of the fact that we are dependant on plants (and some bacteria) to get this oh so important energy? Maybe a brief high-level allusion to the whole idea of why the world is green and why we have predators?? Also the idea of top down and bottom up control - interactions are what keeps the world 'stable' and function (delicate balance)
 
 ## What can we learn from food webs?
+
+### 'Who eats who'
+
+The static/evolutionary capacity of species. Bigger questions: If we introduce a new species which species do (can) they eat and who will eat them (point here to some of the classic problems of not only invasive species going out of hand but also the successful use of bio control - we can confidently introduce a predator/parasite for an invasive species and know that it will not be able to negatively impact the native wildlife). Also important in the context of understanding how new communities might interact as ongoing habitat and climate change alters community composition. Also conservation - cannot conserve a predator unless we preserve its prey (and maybe even its predators - can use the sea otters as an example)
+
+### Propagation of change
+
+Knock-on effects - changes in one population of species affects others (change in part affects the whole), Bigger questions: What happens when we harvest/hunt a specific population. Secondary extinctions. How do species respond to changes? Adapt or die - *i.e.,* a setup for a discussion about rewiring...
+
+## Some THM-type section?
+
+Thinking here along the lines of why it is important to be able to identify critical interactions, preserving the food source of a species, understanding cascading effects (secondary extinctions)
 
 A reference... [@poisotSpeciesWhyEcological2015]
 
