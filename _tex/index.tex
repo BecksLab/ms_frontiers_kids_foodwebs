@@ -1,25 +1,27 @@
 % Options for packages loaded elsewhere
+% Options for packages loaded elsewhere
 \PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
 \PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
 %
 \documentclass[
 ]{article}
-
+\usepackage{xcolor}
 \usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{5}
 \usepackage{iftex}
 \ifPDFTeX
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
   \usepackage{textcomp} % provide euro and other symbols
 \else % if luatex or xetex
-  \usepackage{unicode-math}
+  \usepackage{unicode-math} % this also loads fontspec
   \defaultfontfeatures{Scale=MatchLowercase}
   \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
 \fi
 \usepackage{lmodern}
-\ifPDFTeX\else  
-    % xetex/luatex font selection
+\ifPDFTeX\else
+  % xetex/luatex font selection
 \fi
 % Use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
@@ -37,9 +39,6 @@
 }{% if KOMA class
   \KOMAoptions{parskip=half}}
 \makeatother
-\usepackage{xcolor}
-\setlength{\emergencystretch}{3em} % prevent overfull lines
-\setcounter{secnumdepth}{5}
 % Make \paragraph and \subparagraph free-standing
 \makeatletter
 \ifx\paragraph\undefined\else
@@ -65,8 +64,7 @@
 \makeatother
 
 
-\providecommand{\tightlist}{%
-  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
+\usepackage{longtable,booktabs,array}
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
 \usepackage{etoolbox}
@@ -91,6 +89,8 @@
 % Set default figure placement to htbp
 \def\fps@figure{htbp}
 \makeatother
+
+
 % definitions for citeproc citations
 \NewDocumentCommand\citeproctext{}{}
 \NewDocumentCommand\citeproc{mm}{%
@@ -124,6 +124,18 @@
 \newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
 \newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
 \newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+
+
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+
+
+ 
+
 
 \makeatletter
 \@ifpackageloaded{caption}{}{\usepackage{caption}}
@@ -166,11 +178,9 @@
 \@ifpackageloaded{caption}{}{\usepackage{caption}}
 \@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
 \makeatother
-
 \usepackage{bookmark}
-
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
-\urlstyle{same} % disable monospaced font for URLs
+\urlstyle{same}
 \hypersetup{
   pdftitle={What is a food web and why should we care?},
   pdfauthor={Tanya Strydom},
@@ -192,7 +202,7 @@
 1%
 }%
 }
-\date{2024-12-20}
+\date{2025-05-12}
 
 \usepackage{setspace}
 \usepackage[left]{lineno}
@@ -229,11 +239,60 @@ food webs%
 
 \subsection{What is a food web?}\label{what-is-a-food-web}
 
-Typically food webs represent the feeding links between a collection of
-species and gives us information as to `who eats who' in the community.
+Food webs are a way for us to show all the different feeding links
+between the species in a community (\textbf{FIGURE}). This gives us
+information about `who eats who' as well as information about the flow
+of energy and nutrients between species. This is because the prey that a
+predator can (or chooses) to eat will determine how the nutrients and
+energy is moved and dispersed as it moves from prey to predator
+(\textbf{FIGURE}). This means that both the links within a food web as
+well as the structure of a food web can tell us something about both a
+community of species (who eats who) as well as something about ecosystem
+level processes (energy/nutrient flow and cycling). The fact that food
+webs contain information about both the community (\emph{i.e.,} the
+collection of species found in a specific area) and the ecosystem makes
+them a very powerful and useful tool to allow us to see and understand
+the `bigger picture' of our environment.
+
+\begin{quote}
+Do I need to justify why we care about energy? And more specifically the
+basics of the fact that we are dependant on plants (and some bacteria)
+to get this oh so important energy? Maybe a brief high-level allusion to
+the whole idea of why the world is green and why we have predators??
+Also the idea of top down and bottom up control - interactions are what
+keeps the world `stable' and function (delicate balance)
+\end{quote}
 
 \subsection{What can we learn from food
 webs?}\label{what-can-we-learn-from-food-webs}
+
+\subsubsection{`Who eats who'}\label{who-eats-who}
+
+The static/evolutionary capacity of species. Bigger questions: If we
+introduce a new species which species do (can) they eat and who will eat
+them (point here to some of the classic problems of not only invasive
+species going out of hand but also the successful use of bio control -
+we can confidently introduce a predator/parasite for an invasive species
+and know that it will not be able to negatively impact the native
+wildlife). Also important in the context of understanding how new
+communities might interact as ongoing habitat and climate change alters
+community composition. Also conservation - cannot conserve a predator
+unless we preserve its prey (and maybe even its predators - can use the
+sea otters as an example)
+
+\subsubsection{Propagation of change}\label{propagation-of-change}
+
+Knock-on effects - changes in one population of species affects others
+(change in part affects the whole), Bigger questions: What happens when
+we harvest/hunt a specific population. Secondary extinctions. How do
+species respond to changes? Adapt or die - \emph{i.e.,} a setup for a
+discussion about rewiring\ldots{}
+
+\subsection{Some THM-type section?}\label{some-thm-type-section}
+
+Thinking here along the lines of why it is important to be able to
+identify critical interactions, preserving the food source of a species,
+understanding cascading effects (secondary extinctions)
 
 A reference\ldots{} (Poisot et al., 2015)
 
