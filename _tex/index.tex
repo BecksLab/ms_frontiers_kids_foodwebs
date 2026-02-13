@@ -91,39 +91,6 @@
 \makeatother
 
 
-% definitions for citeproc citations
-\NewDocumentCommand\citeproctext{}{}
-\NewDocumentCommand\citeproc{mm}{%
-  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
-\makeatletter
- % allow citations to break across lines
- \let\@cite@ofmt\@firstofone
- % avoid brackets around text for \cite:
- \def\@biblabel#1{}
- \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
-\makeatother
-\newlength{\cslhangindent}
-\setlength{\cslhangindent}{1.5em}
-\newlength{\csllabelwidth}
-\setlength{\csllabelwidth}{3em}
-\newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
- {\begin{list}{}{%
-  \setlength{\itemindent}{0pt}
-  \setlength{\leftmargin}{0pt}
-  \setlength{\parsep}{0pt}
-  % turn on hanging indent if param 1 is 1
-  \ifodd #1
-   \setlength{\leftmargin}{\cslhangindent}
-   \setlength{\itemindent}{-1\cslhangindent}
-  \fi
-  % set entry spacing
-  \setlength{\itemsep}{#2\baselineskip}}}
- {\end{list}}
-\usepackage{calc}
-\newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
-\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
-\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
-\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
 
 
 
@@ -182,7 +149,7 @@
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same}
 \hypersetup{
-  pdftitle={What is a food web and why should we care?},
+  pdftitle={The Secret Map of Nature: How Food Webs Tell the Story of Our Planet},
   pdfauthor={Tanya Strydom},
   pdfkeywords={food webs},
   colorlinks=true,
@@ -194,7 +161,8 @@
 
 
 
-\title{What is a food web and why should we care?}
+\title{The Secret Map of Nature: How Food Webs Tell the Story of Our
+Planet}
 \author{Tanya Strydom %
 %
 \textsuperscript{%
@@ -202,7 +170,7 @@
 1%
 }%
 }
-\date{2025-05-12}
+\date{2026-02-13}
 
 \usepackage{setspace}
 \usepackage[left]{lineno}
@@ -214,7 +182,8 @@
 \begin{document}
 
 \thispagestyle{empty}
-{\bfseries\sffamily\Large What is a food web and why should we care?}
+{\bfseries\sffamily\Large The Secret Map of Nature: How Food Webs Tell
+the Story of Our Planet}
 \vfil
 Tanya Strydom %
 %
@@ -237,77 +206,90 @@ food webs%
 \linenumbers
 
 
-\subsection{What is a food web?}\label{what-is-a-food-web}
+\section{What is a Food Web?}\label{what-is-a-food-web}
 
-Food webs are a way for us to show all the different feeding links
-between the species in a community (\textbf{FIGURE}). This gives us
-information about `who eats who' as well as information about the flow
-of energy and nutrients between species. This is because the prey that a
-predator can (or chooses) to eat will determine how the nutrients and
-energy is moved and dispersed as it moves from prey to predator
-(\textbf{FIGURE}). This means that both the links within a food web as
-well as the structure of a food web can tell us something about both a
-community of species (who eats who) as well as something about ecosystem
-level processes (energy/nutrient flow and cycling). The fact that food
-webs contain information about both the community (\emph{i.e.,} the
-collection of species found in a specific area) and the ecosystem makes
-them a very powerful and useful tool to allow us to see and understand
-the `bigger picture' of our environment.
+Imagine a giant map where every species in a forest or ocean is a dot,
+and every time one animal eats another, a line connects them. This map
+is called a food web.
 
-\begin{quote}
-Do I need to justify why we care about energy? And more specifically the
-basics of the fact that we are dependant on plants (and some bacteria)
-to get this oh so important energy? Maybe a brief high-level allusion to
-the whole idea of why the world is green and why we have predators??
-Also the idea of top down and bottom up control - interactions are what
-keeps the world `stable' and function (delicate balance)
-\end{quote}
+Food webs aren't just lists of `who eats who'. They are actually `energy
+maps'. Think of energy like a battery: plants get their energy from the
+sun, and when a rabbit eats a plant, it's like plugging into that
+battery. When a fox eats the rabbit, the energy moves again. By looking
+at these links, scientists can see the `bigger picture' of how an entire
+environment functions and stays healthy.
 
-\subsection{What can we learn from food
-webs?}\label{what-can-we-learn-from-food-webs}
+\section{The Two Types of `Maps'}\label{the-two-types-of-maps}
 
-\subsubsection{`Who eats who'}\label{who-eats-who}
+In our research, we found that there are actually two different ways to
+look at these maps:
 
-The static/evolutionary capacity of species. Bigger questions: If we
-introduce a new species which species do (can) they eat and who will eat
-them (point here to some of the classic problems of not only invasive
-species going out of hand but also the successful use of bio control -
-we can confidently introduce a predator/parasite for an invasive species
-and know that it will not be able to negatively impact the native
-wildlife). Also important in the context of understanding how new
-communities might interact as ongoing habitat and climate change alters
-community composition. Also conservation - cannot conserve a predator
-unless we preserve its prey (and maybe even its predators - can use the
-sea otters as an example)
+\begin{itemize}
+\item
+  The `Maybe' Map (The Metaweb): This is a list of all the feeding links
+  that could happen based on how animals have evolved. For example, a
+  lion could eat a zebra because it has the right teeth and speed. This
+  map tells us about the `potential' for interactions everywhere.
+\item
+  The `Actually' Map (The Realised Web): This map shows what is actually
+  happening in one specific place at one specific time. Just because a
+  lion could eat a zebra doesn't mean it will if there are no zebras
+  nearby, or if it finds an easier meal elsewhere.
+\end{itemize}
 
-\subsubsection{Propagation of change}\label{propagation-of-change}
+{[}Image comparing a `Potential' web with many lines to a `Realised' web
+with fewer, specific lines between local species{]}
 
-Knock-on effects - changes in one population of species affects others
-(change in part affects the whole), Bigger questions: What happens when
-we harvest/hunt a specific population. Secondary extinctions. How do
-species respond to changes? Adapt or die - \emph{i.e.,} a setup for a
-discussion about rewiring\ldots{}
+Why do we care about these maps?
 
-\subsection{Some THM-type section?}\label{some-thm-type-section}
+\section{Predicting the Future}\label{predicting-the-future}
 
-Thinking here along the lines of why it is important to be able to
-identify critical interactions, preserving the food source of a species,
-understanding cascading effects (secondary extinctions)
+If a new species moves into a forest (an `invasive species'), we can use
+our `Maybe Map' to guess who they might eat or who might eat them. This
+helps us protect native wildlife before problems even start. It also
+helps with conservation: we know that to save a predator like a sea
+otter, we also have to protect the species it depends on for food.
 
-A reference\ldots{} (Poisot et al., 2015)
+\section{The Domino Effect (Propagation of
+Change)}\label{the-domino-effect-propagation-of-change}
+
+In a food web, everything is connected. If one species disappears, it's
+like pulling a thread in a sweater---the whole thing can start to
+unravel.
+
+Secondary Extinctions: If a predator's only food source disappears, the
+predator might go extinct too, even if nothing else changed.
+
+Rewiring: Sometimes, animals are smart! If their favourite food
+disappears, they might ``rewire'' their behaviour and start eating
+something else from their ``Maybe Map''.
+
+\section{The Big Picture: Keeping the
+Balance}\label{the-big-picture-keeping-the-balance}
+
+By studying both the `Maybe' and the `Actually' maps, scientists can
+understand how nature stays stable. It's a delicate balance:
+
+\begin{itemize}
+\item
+  Bottom-Up: Having enough plants to provide energy for everyone.
+\item
+  Top-Down: Having predators to make sure no one group (like deer or
+  rabbits) grows too large and eats all the plants.
+\end{itemize}
+
+\section{Your Mission: Be a
+Web-Watcher!}\label{your-mission-be-a-web-watcher}
+
+Understanding these interactions is the key to protecting our planet.
+When you see a bird catching a worm or a bee visiting a flower, you
+aren't just seeing a snack---you're seeing a tiny piece of a massive,
+global network that keeps our world green and functioning!.
 
 \section*{References}\label{references}
 \addcontentsline{toc}{section}{References}
 
 \phantomsection\label{refs}
-\begin{CSLReferences}{1}{0}
-\bibitem[\citeproctext]{ref-poisotSpeciesWhyEcological2015}
-Poisot, T., Stouffer, D. B., \& Gravel, D. (2015). Beyond species: Why
-ecological interaction networks vary through space and time.
-\emph{Oikos}, \emph{124}(3), 243--251.
-\url{https://doi.org/10.1111/oik.01719}
-
-\end{CSLReferences}
 
 
 
